@@ -25,8 +25,13 @@ model = create_model()
 def index():
     return 'Hello, World!'
 
-@app.route('/evaluar', methods=['POST'])
+
+
+@app.route('/evaluar', methods=['GET', 'POST'])
 def evaluar():
+    if request.method == 'GET':
+        return jsonify({"message": "Usa POST con uno o más PDFs en base64 para evaluar."})
+
     try:
         content = request.get_json()
         pdf_base64_list = content.get('pdf_base64', [])
@@ -42,29 +47,30 @@ def evaluar():
                 pdf_file = BytesIO(pdf_data)
                 pdf_text = extract_text_from_pdf(pdf_file, model)
                 print(f"Texto extraído del PDF {idx + 1}: {pdf_text}")
+
                 json_content = process_and_return(pdf_text, idx + 1)
-                
+
                 preguntas = json_content['json_content']['Preguntas']
                 respuestas_usuario = json_content['json_content']['Respuestas']
                 pesos = json_content['json_content']['Puntos']
-                
-                respuestas_modelo = [obtener_respuesta_chatbot(pregunta) for pregunta in preguntas]
-                
-                puntajes_por_pregunta = evaluar_examenes(respuestas_usuario, respuestas_modelo, pesos)
-                
-                json_content['json_content']['PuntajesPorPregunta'] = puntajes_por_pregunta['puntajes_por_pregunta']
-                json_content['json_content']['PuntajeTotal'] = puntajes_por_pregunta['puntaje_total']
-                
+
+                respuestas_modelo = [obtener_respuesta_chatbot(p) for p in preguntas]
+                puntajes = evaluar_examenes(respuestas_usuario, respuestas_modelo, pesos)
+
+                json_content['json_content']['PuntajesPorPregunta'] = puntajes['puntajes_por_pregunta']
+                json_content['json_content']['PuntajeTotal'] = puntajes['puntaje_total']
+
                 resultados_pdf.append(json_content)
-                
+
             except Exception as e:
                 print(f"Error al procesar archivo base64 {idx + 1}: {e}")
                 resultados_pdf.append({"error": f"Error al procesar archivo base64 {idx + 1}: {e}"})
 
         return jsonify({"resultados_pdf": resultados_pdf})
-    
+
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
 
 def process_and_return(text, pdf_index):
     extracted_names = extract_names(text)
@@ -106,5 +112,5 @@ def evaluar_examenes(respuestas_usuario, respuestas_modelo, pesos):
         "puntaje_total": puntaje_total
     }
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True)
