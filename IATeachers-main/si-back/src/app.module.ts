@@ -30,10 +30,10 @@ import { EmailController } from './mailer/mailer.controller';
   imports: [
     TypeOrmModule.forRoot({
       type:'mssql', 
-      host:'LAPTOP-S2348A7G',
+      host:'127.0.0.1',
       port:1433,
-      username:'CAM',
-      password: '14092004',
+      username:'hector',
+      password: '123456',
       database: 'UCV_DB',
       entities: [__dirname+'/**/*.entity{.ts,.js}'],
       synchronize: true,
