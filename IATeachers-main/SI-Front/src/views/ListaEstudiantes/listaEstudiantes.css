@@ -1,0 +1,365 @@
+.generalle{
+    background-image: url(''); 
+    background-color: #002854;
+    background-blend-mode: multiply;
+    max-width: 100%;
+    height: 100%;
+    background-size: cover;
+    }
+
+.raya-blanca{
+    border-top: 3px solid #ffffff;
+    margin-top: -70px;
+    max-width: 100%
+}
+
+.raya-roja{
+    border-top: 45px solid #DD0919;
+    margin-top: -10px;
+    max-width: 100%;
+    padding: 0;
+}
+
+.pie{
+    font-family: system-ui;
+    color: rgb(255, 255, 255);
+    margin-top: -35px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: system-ui;
+}
+
+.generalle .contenedorle{
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    height: 807px;
+}
+
+.generalle .t-1{
+    color: #DD0919;
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 550;
+}
+
+.generalle .t-2{
+    color: #002854;
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 550;
+    width: 100%;
+    align-content: center;
+}
+
+.generalle .parte-1{
+    padding: 0;
+    height: 50px;
+    display: flex;
+}
+
+.generalle .logole{
+    background-image: url(''); 
+    background-size: cover;
+    max-width: 300px;
+}
+
+.generalle .docente{
+    text-align: right;
+    margin-top: -11px;
+    color: #002854;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.generalle .icono{
+    size: 15px;
+    margin-right: 10px;
+}
+
+.generalle .d-1{
+    color: #002854;
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 550;
+}
+
+.generalle .parte-2{
+    width: 1750.31px;
+    border-bottom: 1px solid #002854;
+}
+
+.generalle .parte-3{
+    width: 1750.31px;
+    border-bottom: 1px solid #002854;
+    display: flex;
+    padding: 8px 15px;
+}
+
+.generalle .btn-1{
+    background-color: #002854;
+    color: white;
+    border-radius: 10px;
+    width: 270px;
+    font-family: system-ui;
+    font-weight: 550;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.generalle .btn-1:hover, .btn-1:active{
+    background-color: #335b8a;
+}
+
+.generalle .btn-2{
+    background-color: #DD0919;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    font-family: system-ui;
+    font-weight: 550;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.generalle .btn-3{
+    background-color: #DD0919;
+    color: white;
+    border-radius: 10px;
+    width: 80px;
+    font-family: system-ui;
+    font-weight: 550;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.generalle .btn-2:hover, .btn-2:active{
+    background-color: #f23e58;
+}
+
+.generalle .cont-btn{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.generalle .parte-4{
+    margin-top: 10px;
+    height: 570px;
+    max-width: 1750.31px;
+}
+
+.generalle .contenido-desplazable {
+    max-height: calc(100vh - 200px);
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+
+.generalle .contenido-desplazable::-webkit-scrollbar {
+    width: 10px;
+}
+
+.generalle .contenido-desplazable::-webkit-scrollbar-thumb {
+    background-color: #002854;
+    border-radius: 5px;
+}
+
+.generalle .contenido-desplazable::-webkit-scrollbar-thumb:hover {
+    background-color: #335175;
+}
+
+.generalle .parte-5{
+    display: flex;
+    padding: 5px;
+    margin-top: -16px;
+}
+
+.generalle .p-1{
+    padding: 0px 16px;
+    margin-top: -10px;
+    width: 755.67px;
+    margin-right: 0px;
+}
+
+.generalle .p-2{
+    padding: 0px 16px;
+    margin-top: -10px;
+    width: 705.3px;
+    margin-left: 0px;
+    display: flex;
+}
+
+.generalle .p-3{
+    padding: 0px 16px;
+    margin-top: 0px;
+    width: 605px;
+    margin-left: 0px;
+}
+
+.generalle .p-4{
+    padding: 0px 16px;
+    margin-top: 30px;
+    width: 108.3px;
+    margin-left: -40px;
+}
+
+.generalle .p-5{
+    padding: 0px 16px;
+    margin-top: 0px;
+    width: 305px;
+    margin-left: 0px;
+    margin-top: -10px;
+}
+
+.generalle .texto-1{
+    border: 1px solid #002854;
+    border-radius: 15px;
+    padding: 8px 12px;
+    margin-top: 5px;
+    width: 100%;
+    font-size: 18px;
+    font-family: system-ui;
+}
+
+.generalle .sobreponer{
+    position: relative;
+}
+
+.generalle .selec-1{
+    border: 1px solid #ABABAB;
+    color: #002854;
+    border-radius: 15px;
+    padding: 8px 32px 8px 12px;
+    margin-top: 5px;
+    width: calc(100% - 20px);
+    font-size: 18px;
+    font-family: system-ui;
+    appearance: none;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 35px;
+    cursor: pointer;
+}
+
+.generalle .selec-1:hover{
+    border: 1px solid #002854;
+}
+
+.generalle .tabla-estudiantes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.generalle .tabla-estudiantes tr > th{
+    background-color: #002854;
+    color: #ffffff;
+    text-align-last: center;
+}
+
+.generalle .tabla-estudiantes td {
+    border: 1px solid #002854;
+    padding: 8px;
+}
+
+.generalle .tabla{
+    font-family: system-ui;
+    font-weight: 550;
+    max-width: 100%;
+    padding: 0;
+    padding-right: 25px;
+    margin-top: 5px;
+}
+
+.generalle .c1{
+    width: 50px;
+    text-align: center;
+    color: #002854;
+}
+
+.generalle .c2{
+    width: 100px;
+    text-align: center;
+    color: #002854;
+}
+
+.generalle .c3{
+    width: 250px;
+    text-align: center;
+    color: #002854;
+}
+
+.generalle .c4{
+    width: 230px;
+    text-align: center;
+    color: #002854;
+}
+
+.generalle .c5{
+    width: 150px;
+    text-align: center;
+    color: #002854;
+    
+}
+
+.generalle .c6{
+    width: 100px;
+    text-align: center;
+    color: #f23e58;
+}
+
+.generalle .v-card-text {
+    padding: 0;
+}
+
+.generalle .v-field.v-field--prepended {
+    border-radius: 15px;
+}
+
+.generalle .v-field {
+    --v-field-input-padding-top:4px;
+    --v-field-input-padding-bottom: 4px;
+    padding: 4px;
+}
+
+.generalle .v-input--density-default .v-field--variant-outlined, .v-input--density-default .v-field--single-line, .v-input--density-default .v-field--no-label {
+    --v-field-padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.generalle .v-field__input {
+    min-height:37px;
+}
+
+.generalle .v-field_prepend-inner > .v-icon, .v-fieldappend-inner > .v-icon, .v-field_clearable > .v-icon {
+    margin-left: 8px;
+}
+
+.generalle .busc{
+    padding: 0px;
+}
+
+.generalle .v-card--flat {
+    width: 100%;
+}
+
+.generalle .v-text-field {
+    margin-top: 0px;
+}
+
+.generalle .v-field--center-affix .v-field__append-inner, .v-field--center-affix .v-field__clearable, .v-field--center-affix .v-field__prepend-inner {
+    margin-left: 5px;
+}
+
+.generalle .clickable-text {
+    cursor: pointer;
+    color: #DD0919; /* Puedes cambiar el color si lo deseas */
+    text-decoration: underline; /* Esto subraya el texto */
+}

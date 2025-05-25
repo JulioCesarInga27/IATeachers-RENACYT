@@ -1,0 +1,133 @@
+.restablecerD{
+    font-family: system-ui;
+    background-image: url(''); 
+    background-color: #002854; /* Color de fondo azul con transparencia */
+    background-blend-mode: multiply;
+    max-width: 100%;
+    height: 100%;
+    background-size: cover;
+    align-items: center;
+  }
+.restablecerD .cont1-login {
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 650px; /**/
+    width: 560px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+  .restablecerD .logo{
+    background-image: url('');
+    background-size: cover;
+    height: 60px;
+    width: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .restablecerD .login-c1 {
+    max-width: 510px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .restablecerD .v-text-field {
+    margin-top: 10px;
+  }
+  .restablecerD .v-text-field + .v-text-field {
+    margin-top: 10px; /* espacio entre cada text-field */
+  }
+
+  .restablecerD .btn-ini{
+    background-color: #DD0919;
+    color: white;
+    border-radius: 10px;
+    width: 260px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  .restablecerD .btn-final{
+    background-color: #002854;
+    color: white;
+    border-radius: 10px;
+    width: 220px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  /*grosor del boton*/
+  .restablecerD .v-btn.v-btn--density-default {
+    height: calc(var(--v-btn-height) + 10px);
+  }
+  
+  .restablecerD .icono-btn {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .restablecerD .raya-blanca{
+    border-top: 3px solid #ffffff;
+    margin-top: -70px;
+    max-width: 100%
+  }
+  .restablecerD .raya-roja{
+    border-top: 45px solid #DD0919;
+    margin-top: -10px;
+    max-width: 100%;
+    padding: 0;
+  }
+  .restablecerD .pie{
+    font-family: system-ui;
+    color: rgb(255, 255, 255);
+    margin-top: -35px;
+    padding: 0;
+    display: flex; /* Utilizamos flexbox para centrar */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    height: 100%;
+  }
+  
+  .restablecerD .prueba{
+    display: flex; 
+    justify-content: center;
+  }
+  
+  .btncerrar{
+    background-color: #033076; 
+    color: #ffffff;
+    align-items: center !important;
+  }
+  
+  .restablecerD .mx-auto{
+    color: white;
+    justify-content: center;
+  }
+
+  
+.restablecerD .bientext{
+  color: red;
+  font-size: 30px;
+  text-align: center;
+  padding: 25px;
+  font-weight: 500;
+  margin-top: -50px;
+}
+
+.restablecerD .texto{
+  color: #002854;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+}

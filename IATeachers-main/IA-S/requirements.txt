@@ -1,0 +1,8 @@
+Flask
+tensorflow
+pytesseract
+pdf2image
+spacy
+opencv-python-headless
+numpy
+nltk

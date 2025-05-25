@@ -1,0 +1,351 @@
+    .m-general{
+        background-image: url(''); 
+        background-color: #002854; /* Color de fondo azul con transparencia */
+        background-blend-mode: multiply;
+        max-width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .m-raya-blanca{
+        border-top: 3px solid #ffffff;
+        margin-top: -70px;
+        max-width: 100%
+    }
+    
+    .m-raya-roja{
+        border-top: 45px solid #c41212;
+        margin-top: -10px;
+        max-width: 100%;
+        padding: 0;
+    }
+    .pie{
+        font-family: system-ui;
+        color: rgb(255, 255, 255);
+        margin-top: -35px;
+        padding: 0;
+        display: flex; /* Utilizamos flexbox para centrar */
+        justify-content: center; /* Centramos horizontalmente */
+        align-items: center; /* Centramos verticalmente */
+        height: 100%;
+    }
+    .seccionView{
+        display: flex;
+        margin-top: 60px;
+        height: 710px;
+    }
+    .seccionView .cont-logo{
+        height: 100px;
+    }
+    .seccionView .logo{
+        background-image: url('');
+        background-size: cover;
+        margin-top: 40px;
+        max-width: 350px;
+        height: 50px;
+    }
+    .seccionView .icono1 {
+        color: rgb(12, 12, 73); 
+        font-size: 200px;
+        left: 132px;;
+        margin-top: 15px;
+        }
+    .seccionView .usuario{
+        margin-top: 150px;
+        text-align: center;
+        font-size: 28px;
+        color: #002854;
+    }
+    .seccionView .cont-cod{
+        display: flex;
+        margin-top: -38px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #002854;
+        margin-left: 220px;
+    }
+    .seccionView .cont-infoper{
+        background-color: #ffffff;
+        width: 650px;
+        border-radius: 20px;
+    }
+
+    .seccionView .cont-pag{
+        display: flex;
+        margin-top: -35px;
+        justify-content: center;
+        align-items: center;
+        width: 800;
+    }
+    .seccionView .calendario {
+        background-image: url('');
+        width: 25px;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+    .seccionView .gmail {
+        background-image: url('');
+        width: 25px;
+        height: 25px;
+        margin-top: 6px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+    .seccionView .doc {
+        background-image: url('');
+        width: 25px;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+    .seccionView .drive {
+        background-image: url('');
+        width: 25px;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+    .seccionView .keep {
+        background-image: url('');
+        width: 25px;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+    .seccionView .v-btn--size-default {
+        --v-btn-size: 0.875rem;
+        --v-btn-height: 36px;
+        font-size: var(--v-btn-size);
+        min-width: 0px; 
+        padding: 0px;
+    }
+
+    .seccionView .dat{
+        margin-top: -30px;
+        font-weight: bold;
+        color:#002854;
+        margin-left: 40px;
+    }
+    .seccionView .dat-sexo{
+        display: flex;
+    }
+    .seccionView .sexo{
+        margin-left: 10px;
+        font-weight: normal;
+    }
+    .seccionView .dat-estado{
+        display: flex;
+        margin-top: -20px;
+    }
+    .seccionView .estado{
+        margin-left: 10px;
+        font-weight: normal;
+    }
+    .seccionView .dat-gmail{
+        display: flex;
+        margin-top: -20px;
+    }
+    .seccionView .correo{
+        margin-left: 10px;
+        font-weight: normal;
+    }
+    .seccionView .btn-cerrar{
+        background-color: #DD0919;
+        color: white;
+        border-radius: 10px;
+        width: 300px;
+        margin-left: 145px;
+    }
+    .seccionView .btn-cerrar:hover{
+        background-color: #f23e58;
+    }
+    .seccionView .btn-regresar{
+        color: white;
+        border-radius: 10px;
+        width: 200px;
+        font-family: system-ui;
+        font-weight: 550;
+        font-size: 20px;
+        padding: 10px;
+        background-color: #DD0919;
+        text-align: center;
+    }
+    .seccionView .btn-regresar:hover{
+        background-color: #f23e58;
+    }
+    .seccionView .cont-asignatura{
+        background-color: rgb(255, 255, 255);
+        margin-left: 40px;
+        border-radius: 20px;
+    }
+    .seccionView .cont-titulo{
+        border-bottom: 1px solid #002854;
+        width: 99%;
+    }
+    .seccionView .t-1 {
+        color: #DD0919;
+        font-size: 20px;
+        font-family: system-ui;
+        font-weight: 550;
+    }
+    .seccionView .t-2 {
+        color: #002854;
+        font-size: 20px;
+        font-family: system-ui;
+        font-weight: 550;
+        align-content: center;
+    }
+    .seccionView .cont-subtitulo{
+        border-bottom: 1px solid #002854;
+        width: 99%;
+        font-size: 12px;
+        display: flex;
+        padding: 8px 15px;
+    }
+    .seccionView .A{
+        padding: 0;
+        align-content: center;
+        width: 80%;
+    }
+    .seccionView .B{
+        flex: 1;
+        max-width: 40%;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .seccionView .icon{
+        color: #e02525;
+        font-size: 50px;
+        margin-left: 100px;
+    }
+    .seccionView .cont-icon{
+        margin-top: -20px;
+    }
+    .seccionView .name{
+        font-size: 30px;
+        align-content: center;
+    }
+    .seccionView .all{
+        height: 480px;
+        max-width: 99%;
+        display: flex;
+        flex-direction: column;
+    }
+    .seccionView .contenido-desplazable {
+        margin-top: 15px;
+        max-height: calc(100vh - 200px);
+        padding-right: 10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .seccionView .contenido-desplazable::-webkit-scrollbar {
+        width: 10px;
+    }
+    .seccionView .contenido-desplazable::-webkit-scrollbar-thumb {
+        background-color: #002854;
+        border-radius: 5px;
+    }
+    .seccionView .contenido-desplazable::-webkit-scrollbar-thumb:hover {
+        background-color: #335175;
+    }
+    .seccionView .cont-ce{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .seccionView .lista{
+        height: 204px;
+        width: 95%;
+        margin: 5px;
+        border-radius: 10px;
+        border: 1.5px solid #002854;
+        border-left: 30px solid #002854;
+    }
+    .seccionView .v-col-2 {
+        display: contents;
+    }
+    .seccionView .v-row {
+        margin-left: 10px;
+        margin-right: -17px;
+    }
+    .seccionView .card1 {
+        color: #002854;
+        font-size: 18px;
+        font-family: system-ui;
+        font-weight: 550;
+        padding: 10px 16px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    .seccionView .card2 {
+        color: #DD0919;
+        font-size: 25px;
+        font-family: system-ui;
+        font-weight: 550;
+        padding-top: 0;
+    }
+    .seccionView .card3 {
+        color: #002854;
+        font-size: 18px;
+        font-family: system-ui;
+        font-weight: 550;
+        padding-bottom: 10px;
+    }
+    .seccionView .card4 {
+        color: #DD0919;
+        font-size: 18px;
+        font-family: system-ui;
+        font-weight: 550;
+        padding-top: 0;
+        padding-bottom: 12px;
+    }
+    .seccionView .card5 {
+        color: #002854;
+        font-size: 18px;
+        font-family: system-ui;
+        font-weight: 550;
+        padding-top: 9px;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+    }
+    .seccionView .btn-entrar {
+        color: white;
+        border-radius: 10px;
+        width: 100px;
+        font-family: system-ui;
+        font-weight: 550;
+        font-size: 20px;
+        padding: 10px;
+        background-color: #DD0919;
+        text-align: center;
+    }
+    .seccionView .btn-entrar:hover{
+        background-color: #f23e58;
+    }
+    .seccionView .btnlista {
+        padding: 0;
+        display: flex;
+        justify-content: right;
+    }
+    .seccionView .textlista {
+        padding: 0;
+        width: 90%;
+    }
+    .seccionView .iconoo{
+        width: 200px; 
+        height: 150px; 
+        border: 3px solid #004080; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        font-size: 18px; 
+        color: #004080; 
+        background-color: #ffffff; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        text-align: center; 
+        margin-left: 170px;
+        margin-top: 80px;
+    }

@@ -1,0 +1,293 @@
+.adminU{
+    font-family: system-ui;
+    background-image: url(); 
+    background-color: #002854; 
+    background-blend-mode: multiply;
+    max-width: 100%;
+    height: 919px;
+    margin-top: -10px;
+    background-size: cover;
+}
+
+.aU-raya-blanca{
+    border-top: 3px solid #ffffff;
+    margin-top: -68px;
+    max-width: 100%;
+}
+
+.aU-raya-roja{
+    border-top: 45px solid #c41212;
+    margin-top: -10px;
+    max-width: 100%;
+    padding: 0px;
+}
+
+.aU-pie{
+    font-family: system-ui;
+    color: rgb(255, 255, 255);
+    margin-top: -35px;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height:100%
+}
+
+.adminU .cont2{
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 790px;
+    width: 1264px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -70px;
+    right: 0;
+    bottom: 0;
+    left: 540px;
+    margin: auto;
+}
+
+.adminU .logo{
+    background-image: url("");
+    background-size: cover;
+    height: 50px;
+    margin-top: 30px;
+    max-width: 300px;
+    margin-left: 910px;
+}
+
+.adminU .contenedorP{
+    width: 96%;
+    margin-top: 0px;
+    margin-left: 27px;
+}
+
+.adminU .titu{
+    font-size: 25px;
+    color: #002854;    
+    margin-top: -62px;
+}
+
+.adminU .divi{
+    margin-top: 15px;
+}
+
+.adminU .conten{
+    margin-top: 10px;
+}
+
+.adminU .cont-b{
+    margin-left: 623px;
+    margin-top: -103px;
+}
+
+.adminU .btn-registrar{
+    background-color: #c41212;
+    color: #ffffff;
+    width: 163px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.adminU .btn-modificar{
+    background-color: #c41212;
+    color: #ffffff;
+    width: 163px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.adminU .btn-limpiar{
+    background-color: #c41212;
+    color: #ffffff;
+    width: 163px;
+    height: 50px;
+}
+
+.adminU .tabla-docentes{
+    width: 94%;
+    border-collapse: collapse;
+    margin-top: -14px;
+    font-size: 18px;
+    margin-left: 35px;
+}
+
+.adminU .tabla-docentes tr > th{
+    background-color: #002854;
+    color: #ffffff;
+    text-align-last: center;
+}
+
+.adminU .tabla-docentes td{
+    border: 0px solid #002854;
+    padding: 8px;
+}
+
+.adminU .c1{
+    color: #002854;
+}
+
+.adminU .pagination{
+    margin-top: 10px;
+    margin-left: 500px;
+}
+
+.adminU .pagination .utils{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.adminU .pagination .botonPag{
+    background-color: #c41212;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.adminU .fondoMitad{
+    max-width: 30%;
+    height: 100%;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.adminU .contenedorUser{
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 790px;
+    width: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 6px;
+    right: 0;
+    bottom: 0;
+    right: 658px;
+    margin: auto;
+}
+
+.adminU .cont-logoUCV{
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: -13px;
+}
+
+.adminU .logoPRIN{
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 150px;
+    border: 3px solid #004080; 
+    border-radius: 15px;
+}
+
+.adminU .iconousuario{
+    color: #002854;
+    margin-top: -4px;
+    font-size: 200px;
+    left: 138px;
+    margin-bottom: 6px;
+}
+
+.adminU .contenedorInfo{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.adminU .usuarioEncontrado{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 28px;
+    color: #002854;
+}
+
+.adminU .contenedorCodigo{
+    display: flex;
+    margin-top: -31px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #002854;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.adminU .contenedorAcceso{
+    display: flex;
+    margin-top: -14px;
+    justify-content: center;
+    align-items: center;
+    width: 96%
+}
+
+.adminU .calendarioAdmin{
+    background-image: url('');
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.adminU .gmail{
+    background-image: url('');
+    width: 25px;
+    height: 25px;
+    margin-top: 6px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.adminU .doc{
+    background-image: url('');
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.adminU .drive{
+    background-image: url('');
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.adminU .keep{
+    background-image: url('');
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.adminU .menubtn{
+    padding: 0px;
+}
+
+.adminU .btnmenu1{
+    width: 100%;
+    margin-bottom: 7px;
+    height: 80px;
+    color: #002854;
+    font-size: 18px;
+}
+.adminU .logos{
+    width: 300px; 
+    height: 200px; 
+    border: 3px solid #004080; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 18px; 
+    color: #004080; 
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    margin-left: 150px;
+}
+
+.adminU .textlogo{
+    margin-top: 30px;
+    color:#002854;
+    text-align: center;
+}

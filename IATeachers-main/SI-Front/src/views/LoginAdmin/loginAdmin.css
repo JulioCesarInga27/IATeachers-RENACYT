@@ -1,0 +1,120 @@
+.loginAdmin{
+    background-blend-mode: multiply;
+    background-color: #0029547a; 
+    max-width: 100%;
+    height: 50%;
+    background-size: cover;
+    }
+.lod2{
+    background-color: #002954; 
+    max-width: 100%;
+    height: 455px;
+}
+
+.loginAdmin .cont1-lodadmi {
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 550px; 
+    width: 460px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+    }
+
+.loginAdmin .logoCandado{
+    background-image: url('');
+    height: 120px;
+    width: 120px; 
+    background-position: center;
+    border: 6px solid rgb(255, 255, 255); 
+    border-radius: 50%; 
+    background-size: cover; 
+    margin-top: 100px;
+    position: relative; /* Asigna una posición relativa o absoluta */
+    z-index: 2; 
+}
+
+.loginAdmin .logo{
+    background-image: url('');
+    background-size: cover;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 50px;
+    }
+    .loginAdmin .login-c1 {
+        max-width: 410px;
+        margin: 0 auto;
+    }
+    .loginAdmin .v-text-field {
+        margin-top: 40px;
+    }
+    .loginAdmin .v-text-field + .v-text-field {
+        margin-top: 20px; 
+    }
+
+    .loginAdmin .btn-inicio{
+        background-color: #ee1010;
+        color: white;
+        border-radius: 10px;
+        width: 260px;
+        left: 80px;
+        font-family: Arial, Helvetica, sans-serif !important;
+        text-transform: capitalize;
+        font-size: 15px;
+        }
+    
+    .loginAdmin .btn-contra{
+    text-transform: none; 
+    font-weight: bold;
+    color: #080935; 
+    font-size: 14px;
+    text-decoration: underline;
+    left: 100px;
+    }
+
+    .loginAdmin .btn-contraT{
+    text-transform: none; 
+    font-weight: bold;
+    color: #080935; 
+    font-size: 14px;
+    text-decoration: underline;
+    left: 80px;
+    margin-top: 20px;
+    }
+    .loginAdmin .btn-contra:hover,
+    .btn-contra:active {
+    color: rgb(52, 184, 245); 
+    }
+    .btn-contra:first-letter {
+    text-transform: uppercase; 
+    }
+        
+
+    .lo-raya-blanca{
+        border-top: 3px solid #ffffff;
+        margin-top: -70px;
+        max-width: 100%
+    }
+    
+    .lo-raya-roja{
+        border-top: 45px solid #c41212;
+        margin-top: -10px;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .lo-pie{
+    font-family: system-ui;
+    color: rgb(255, 255, 255);
+    margin-top: -35px;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height:100%
+    }

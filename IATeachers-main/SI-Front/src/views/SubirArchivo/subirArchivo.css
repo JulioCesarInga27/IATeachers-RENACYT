@@ -1,0 +1,245 @@
+.generalsa{
+    background-image: url(''); 
+    background-color: #002854;
+    background-blend-mode: multiply;
+    max-width: 100%;
+    height: 100%;
+    background-size: cover;
+    font-family: system-ui;
+    }
+
+.raya-blanca{
+    border-top: 3px solid #ffffff;
+    margin-top: -70px;
+    max-width: 100%
+}
+
+.raya-roja{
+    border-top: 45px solid #DD0919;
+    margin-top: -10px;
+    max-width: 100%;
+    padding: 0;
+}
+
+.pie{
+    font-family: system-ui;
+    color: rgb(255, 255, 255);
+    margin-top: -35px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.generalsa .contenedor{
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    height: 91%;
+}
+
+.generalsa .t-1{
+    color: #DD0919;
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 550;
+}
+
+.generalsa .t-2{
+    color: #002854;
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 550;
+    width: 100%;
+    align-content: center;
+}
+
+.generalsa .t-3{
+    color: #DD0919;
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 550;
+    margin-bottom: 15px;
+}
+
+.generalsa .parte-1{
+    padding: 0;
+    height: 50px;
+    display: flex;
+}
+
+.generalsa .logosub{
+    background-image: url(''); 
+    background-size: cover;
+    max-width: 300px;
+}
+
+.generalsa .docente{
+    text-align: right;
+    margin-top: -11px;
+    color: #002854;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.generalsa .icono{
+    size: 15px;
+    margin-right: 10px;
+}
+
+.generalsa .d-1{
+    color: #002854;
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 550;
+}
+
+.generalsa .parte-2{
+    width: 99%;
+    border-bottom: 1px solid #002854;
+}
+
+.generalsa .parte-3{
+    width: 99%;
+    border-bottom: 1px solid #002854;
+    display: flex;
+    padding: 8px 15px;
+}
+
+.generalsa .btn-1{
+    background-color: #002854;
+    color: white;
+    border-radius: 10px;
+    width: 270px;
+    font-family: system-ui;
+    font-weight: 550;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.generalsa .btn-1:hover, .btn-1:active{
+    background-color: #335b8a;
+}
+
+.generalsa .btn-2{
+    background-color: #DD0919;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    font-family: system-ui;
+    font-weight: 550;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.generalsa .btn-2:hover, .btn-2:active{
+    background-color: #f23e58;
+}
+
+.generalsa .cont-btn{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.generalsa .parte-4{
+    margin-top: 10px;
+    height: 570px;
+    max-width: 99%;
+    display: flex;
+}
+
+.generalsa .contenido-desplazable {
+    max-height: calc(100vh - 200px);
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+
+.generalsa .contenido-desplazable::-webkit-scrollbar {
+    width: 10px;
+}
+
+.generalsa .contenido-desplazable::-webkit-scrollbar-thumb {
+    background-color: #002854;
+    border-radius: 5px;
+}
+
+.generalsa .contenido-desplazable::-webkit-scrollbar-thumb:hover {
+    background-color: #335175;
+}
+
+.generalsa .imagen-1{
+    border: 1px solid black;
+    padding: 20px 30px;
+    margin: 10px;
+    border-radius: 15px;
+    height: 900px;
+}
+
+.generalsa .cont-img{
+    max-height: 810px;
+    height: 810px;
+}
+
+.prueba{
+    display: flex; 
+    justify-content: center;
+}
+.mx-auto{
+    color: white;
+    justify-content: center;
+}
+
+.generalsa .pdftitulo{
+    padding: 1px;
+    text-align-last: center;
+}
+
+.generalsa .pdtit{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.generalsa .cont-alum{
+    padding-left: 34px;
+    padding-top: 22px;
+    padding-bottom: 7px;
+}
+
+.generalsa .txtan{
+    font-size: 18px;
+}
+
+.generalsa .cont-preg{
+    padding: 0px;
+}
+
+.generalsa .cont-ppr{
+    padding-left: 0px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.generalsa .cont-pp{
+    display: flex;
+    padding: 0px;
+    justify-content: left;
+}
+
+.generalsa .izq{
+    padding: 0px;
+    width: 658px;
+    margin: 0px;
+    text-align: justify;
+    padding-right: 15px;
+}
+
+.generalsa .cont-r{
+    padding: 0px;
+    text-align: justify;
+    padding-top: 20px;
+}

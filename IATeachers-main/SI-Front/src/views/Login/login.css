@@ -1,0 +1,115 @@
+.general{
+  font-family: system-ui;
+  background-color: #002854; 
+  background-blend-mode: multiply;
+  max-width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.cont1-login {
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 550px; /**/
+  width: 460px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.logo{
+  background-size: cover;
+  height: 60px;
+  margin-top: 40px;
+  font-size: 25px;
+}
+.login-c1 {
+  max-width: 410px;
+  margin: 0 auto;
+}
+.v-text-field {
+  margin-top: 50px;
+}
+.v-text-field + .v-text-field {
+  margin-top: 20px; 
+}
+.btn-contra{
+  text-transform: none; 
+  font-weight: bold;
+  color: #080935; 
+  font-size: 14px;
+  text-decoration: underline;
+  left: 100px;
+}
+
+.btn-contraT{
+  text-transform: none; 
+  font-weight: bold;
+  color: #080935; 
+  font-size: 14px;
+  text-decoration: underline;
+  left: 80px;
+}
+.btn-contra:hover,
+.btn-contra:active {
+  color: rgb(52, 184, 245); 
+}
+.btn-contra:first-letter {
+  text-transform: uppercase; 
+}
+.btn-inicio{
+  background-color: #DD0919;
+  color: white;
+  border-radius: 10px;
+  width: 260px;
+  left: 80px;
+  font-family: Arial, Helvetica, sans-serif !important;
+  text-transform: capitalize;
+  font-size: 15px;
+  margin-top: 20px;
+  
+}
+/*grosor del boton*/
+.v-btn.v-btn--density-default {
+  height: calc(var(--v-btn-height) + 10px);
+}
+
+
+.raya-blanca{
+  border-top: 3px solid #ffffff;
+  margin-top: -70px;
+  max-width: 100%
+}
+.raya-roja{
+  border-top: 45px solid #DD0919;
+  margin-top: -10px;
+  max-width: 100%;
+  padding: 0;
+}
+.pie{
+  font-family: system-ui;
+  color: rgb(255, 255, 255);
+  margin-top: -35px;
+  padding: 0;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
+}
+
+.prueba{
+  display: flex; 
+  justify-content: center;
+}
+
+.btnclose{
+  background-color: #033076; 
+  color: #ffffff;
+}
+
+.mx-auto{
+  color: white;
+  justify-content: center;
+}
