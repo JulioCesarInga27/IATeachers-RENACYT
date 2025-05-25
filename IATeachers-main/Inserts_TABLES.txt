@@ -1,0 +1,203 @@
+USE [UCV_DB];
+GO
+
+-- Insert 5 registros en facultad
+INSERT INTO dbo.facultad (idFacultad, descripcionFa) VALUES
+(1, 'Facultad de Ingeniería'),
+(2, 'Facultad de Medicina'),
+(3, 'Facultad de Derecho'),
+(4, 'Facultad de Ciencias Sociales'),
+(5, 'Facultad de Arquitectura');
+GO
+
+-- Insert 5 registros en carrera
+INSERT INTO dbo.carrera (idCarrera, nombreCarrera, idFacultad) VALUES
+(101, 'Ingeniería de Sistemas', 1),
+(102, 'Medicina General', 2),
+(103, 'Derecho Penal', 3),
+(104, 'Sociología', 4),
+(105, 'Arquitectura', 5);
+GO
+
+-- Insert 5 registros en categoriacurso
+INSERT INTO dbo.categoriacurso (idCategoriaCurso, descripcionCC) VALUES
+('CAT001', 'Básico'),
+('CAT002', 'Intermedio'),
+('CAT003', 'Avanzado'),
+('CAT004', 'Electivo'),
+('CAT005', 'Especialización');
+GO
+
+-- Insert 5 registros en categoriaestudiante
+INSERT INTO dbo.categoriaestudiante (idCategoriaE, descripcionCE) VALUES
+('CE001', 'Regular'),
+('CE002', 'Becado'),
+('CE003', 'Egresado'),
+('CE004', 'Postgrado'),
+('CE005', 'Visitante');
+GO
+
+-- Insert 5 registros en ciclo
+INSERT INTO dbo.ciclo (idCiclo, descripcion) VALUES
+(1, 'Ciclo 2023-I'),
+(2, 'Ciclo 2023-II'),
+(3, 'Ciclo 2024-I'),
+(4, 'Ciclo 2024-II'),
+(5, 'Ciclo 2025-I');
+GO
+
+-- Insert 5 registros en genero
+INSERT INTO dbo.genero (idGenero, descripcion) VALUES
+('G001', 'Masculino'),
+('G002', 'Femenino'),
+('G003', 'No Binario'),
+('G004', 'Prefiero no decir'),
+('G005', 'Otro');
+GO
+
+-- Insert 5 registros en estadocivil
+INSERT INTO dbo.estadocivil (idEstado, descripcionE) VALUES
+('EC001', 'Soltero'),
+('EC002', 'Casado'),
+('EC003', 'Divorciado'),
+('EC004', 'Viudo'),
+('EC005', 'Concubinato');
+GO
+
+-- Insert 5 registros en distrito
+INSERT INTO dbo.distrito (IDDistrito, Nombre_Di) VALUES
+(1, 'Lima Centro'),
+(2, 'Miraflores'),
+(3, 'San Isidro'),
+(4, 'Barranco'),
+(5, 'Surco');
+GO
+
+-- Insert 5 registros en modalidad
+INSERT INTO dbo.modalidad (idModalidad, descripcionM) VALUES
+('M001', 'Presencial'),
+('M002', 'Virtual'),
+('M003', 'Semipresencial'),
+('M004', 'Prácticas'),
+('M005', 'Tesis');
+GO
+
+-- Insert 5 registros en pabellon
+INSERT INTO dbo.pabellon (IdPabellon, NombrePabellon) VALUES
+('P001', 'Pabellón A'),
+('P002', 'Pabellón B'),
+('P003', 'Pabellón C'),
+('P004', 'Pabellón D'),
+('P005', 'Pabellón E');
+GO
+
+-- Insert 5 registros en turno
+INSERT INTO dbo.turno (idTurno, descripcionTurno) VALUES
+('T001', 'Mañana'),
+('T002', 'Tarde'),
+('T003', 'Noche'),
+('T004', 'Fin de semana'),
+('T005', 'Mixto');
+GO
+
+-- Insert 5 registros en tipo
+INSERT INTO dbo.tipo (idTipo, descripcion) VALUES
+('TP001', 'Parcial'),
+('TP002', 'Final'),
+('TP003', 'Tarea'),
+('TP004', 'Proyecto'),
+('TP005', 'Examen Oral');
+GO
+
+-- Insert 5 registros en unidad
+INSERT INTO dbo.unidad (idUnidad, descripcionU) VALUES
+('U001', 'Unidad 1'),
+('U002', 'Unidad 2'),
+('U003', 'Unidad 3'),
+('U004', 'Unidad 4'),
+('U005', 'Unidad 5');
+GO
+
+-- Insert 5 registros en curso
+INSERT INTO dbo.curso (idCurso, NombreCurso, NumeroCreditos, idCategoriaCurso, idCiclo) VALUES
+('C001', 'Matemáticas Básicas', 3, 'CAT001', 1),
+('C002', 'Programación I', 4, 'CAT002', 2),
+('C003', 'Anatomía', 5, 'CAT003', 3),
+('C004', 'Derecho Constitucional', 3, 'CAT004', 4),
+('C005', 'Arquitectura Moderna', 4, 'CAT005', 5);
+GO
+
+-- Insert 5 registros en estudiante
+INSERT INTO dbo.estudiante (codigoE, dniE, nombresE, apellidosE, correo, celular, direccion, idGenero, idEstado, idDistrito, idCategoriaE, idCarrera) VALUES
+(1001, '12345678A', 'Juan', 'Pérez', 'juan.perez@mail.com', '987654321', 'Av. Siempre Viva 123', 'G001', 'EC001', 1, 'CE001', 101),
+(1002, '87654321B', 'Ana', 'Gómez', 'ana.gomez@mail.com', '987654322', 'Jr. Falsa 456', 'G002', 'EC002', 2, 'CE002', 102),
+(1003, '11223344C', 'Luis', 'Ramírez', 'luis.ramirez@mail.com', '987654323', 'Calle Luna 789', 'G001', 'EC003', 3, 'CE003', 103),
+(1004, '44332211D', 'María', 'Lopez', 'maria.lopez@mail.com', '987654324', 'Pasaje Sol 101', 'G002', 'EC004', 4, 'CE004', 104),
+(1005, '55667788E', 'Carlos', 'Santos', 'carlos.santos@mail.com', '987654325', 'Av. Estrella 202', 'G001', 'EC005', 5, 'CE005', 105);
+GO
+
+-- Insert 5 registros en profesor
+INSERT INTO dbo.profesor (codigoD, dniProf, nombresD, apellidosD, correo, celular, direccion, idGenero, idEstado, idDistrito) VALUES
+(5001, '98765432X', 'Miguel', 'Fernández', 'miguel.fernandez@mail.com', '912345678', 'Av. Los Pinos 123', 'G001', 'EC001', 1),
+(5002, '87654321Y', 'Sofia', 'Martinez', 'sofia.martinez@mail.com', '912345679', 'Jr. Los Olivos 456', 'G002', 'EC002', 2),
+(5003, '76543210Z', 'Andrés', 'Rodríguez', 'andres.rodriguez@mail.com', '912345680', 'Calle Las Flores 789', 'G001', 'EC003', 3),
+(5004, '65432109W', 'Laura', 'Gonzales', 'laura.gonzales@mail.com', '912345681', 'Pasaje Las Palmas 101', 'G002', 'EC004', 4),
+(5005, '54321098V', 'José', 'Hernández', 'jose.hernandez@mail.com', '912345682', 'Av. Los Robles 202', 'G001', 'EC005', 5);
+GO
+
+-- Insert 5 registros en matricula
+INSERT INTO dbo.matricula (idMatricula, codigoE, totalCursos, totalCreditos, fechaMatricula, codigoD) VALUES
+(9001, 1001, 4, 14, '2024-03-01', 5001),
+(9002, 1002, 3, 12, '2024-03-02', 5002),
+(9003, 1003, 5, 18, '2024-03-03', 5003),
+(9004, 1004, 2, 6, '2024-03-04', 5004),
+(9005, 1005, 3, 10, '2024-03-05', 5005);
+GO
+
+-- Insert 5 registros en detallematricula
+INSERT INTO dbo.detallematricula (idMatricula, idCurso, fechaInicio, fechaTermino, aula, idPabellon, idTurno, codigoD, idModalidad) VALUES
+(9001, 'C001', '2024-03-01', '2024-06-01', 'A101', 'P001', 'T001', 5001, 'M001'),
+(9001, 'C002', '2024-03-01', '2024-06-01', 'A102', 'P001', 'T002', 5001, 'M002'),
+(9002, 'C003', '2024-03-02', '2024-06-02', 'B201', 'P002', 'T001', 5002, 'M003'),
+(9003, 'C004', '2024-03-03', '2024-06-03', 'C301', 'P003', 'T003', 5003, 'M004'),
+(9004, 'C005', '2024-03-04', '2024-06-04', 'D401', 'P004', 'T004', 5004, 'M005');
+GO
+
+-- Insert 5 registros en evaluacion
+INSERT INTO dbo.evaluacion (idEvaluacion, idTipo, descripcionE, porcentaje) VALUES
+(1, 'TP001', 'Examen parcial 1', 25),
+(2, 'TP002', 'Examen final', 40),
+(3, 'TP003', 'Tareas', 15),
+(4, 'TP004', 'Proyecto final', 20),
+(5, 'TP005', 'Examen oral', 10);
+GO
+
+-- Insert 5 registros en detalleevaluacion
+INSERT INTO dbo.detalleevaluacion (idDetalle, idEvaluacion, idCurso, idUnidad, fecha, codigoD) VALUES
+(1, 1, 'C001', 'U001', '2024-04-15', 5001),
+(2, 2, 'C002', 'U002', '2024-05-10', 5002),
+(3, 3, 'C003', 'U003', '2024-04-20', 5003),
+(4, 4, 'C004', 'U004', '2024-05-25', 5004),
+(5, 5, 'C005', 'U005', '2024-06-01', 5005);
+GO
+
+
+-- Inserts para profesor
+INSERT INTO [dbo].[profesor] (codigoD, dniProf, nombresD, apellidosD, correo, celular, direccion, idGenero, idEstado, idDistrito)
+VALUES
+(1, '12345678', 'Juan', 'Pérez', 'juan.perez@example.com', '987654321', 'Av. Siempre Viva 123', 'M', 'Activo', 101),
+(2, '87654321', 'María', 'Gómez', 'maria.gomez@example.com', '987654322', 'Calle Falsa 456', 'F', 'Activo', 102),
+(3, '11223344', 'Carlos', 'Lopez', 'carlos.lopez@example.com', '987654323', 'Jr. Las Flores 789', 'M', 'Activo', 103),
+(4, '44332211', 'Ana', 'Martínez', 'ana.martinez@example.com', '987654324', 'Pje. Los Olivos 101', 'F', 'Activo', 104),
+(5, '55667788', 'Luis', 'Rodríguez', 'luis.rodriguez@example.com', '987654325', 'Av. Central 202', 'M', 'Activo', 105);
+
+-- Inserts para usuario usando los codigoD anteriores
+INSERT INTO [dbo].[usuario] (id, username, password, issuperuser, codigoD)
+VALUES
+(1, 'juanp', 'pass123', 0, 5001),
+(2, 'mariag', 'pass456', 0, 5002),
+(3, 'carlosl', 'pass789', 0, 5003),
+(4, 'anam', 'pass321', 0, 5004),
+(5, 'luisr', 'pass654', 1, 5005);
+
+
