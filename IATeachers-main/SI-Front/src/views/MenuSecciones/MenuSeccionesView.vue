@@ -36,7 +36,7 @@
                         <v-btn href="https://www.google.com/intl/es-419/gmail/about/"
                         height="30"
                         target="-blank">            
-                        <v-icon class="">Gmaill</v-icon>
+                        <v-icon class="">Gmail</v-icon>
                         Gmail</v-btn>
                     </v-col>
 
