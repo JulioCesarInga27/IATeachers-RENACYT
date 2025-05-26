@@ -29,14 +29,24 @@
       <v-col>
         <v-btn href="https://calendar.google.com/calendar/u/0/r?pli=1"
         class="btnDiri"
-        target="-blank">            
+        target="-blank">
+         <img
+            src="https://ssl.gstatic.com/images/branding/product/1x/calendar_2020q4_32dp.png"
+            alt="Calendario"
+            style="width:20px; height:20px; margin-right:8px;"
+          />            
         Calendario </v-btn>
       </v-col>
 
       <v-col>
         <v-btn href="https://www.google.com/intl/es-419/gmail/about/"
         class="btnDiri"
-        target="-blank">            
+        target="-blank">
+        <img
+          src="https://ssl.gstatic.com/images/branding/product/1x/gmail_2020q4_32dp.png"
+          alt="Gmail"
+          style="width:20px; height:20px; margin-right:8px;"
+        />            
         Gmail</v-btn>
       </v-col>
 
@@ -44,7 +54,12 @@
         <v-btn href="https://docs.google.com/document/u/0/?tgif=d"
         height="40"
         class="btnDiri"
-        target="-blank">            
+        target="-blank">
+        <img
+          src="https://ssl.gstatic.com/images/branding/product/1x/docs_2020q4_32dp.png"
+          alt="Documentos"
+          style="width:20px; height:20px; margin-right:8px;"
+        />            
         Documentos</v-btn>
       </v-col>
 
@@ -52,14 +67,24 @@
         <v-btn href="https://drive.google.com/drive/my-drive?hl=es"
         height="40"
         class="btnDiri"
-        target="-blank">            
+        target="-blank">
+        <img
+          src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png"
+          alt="Drive"
+          style="width:20px; height:20px; margin-right:8px;"
+        />            
         Drive</v-btn>
       </v-col>
 
       <v-col>
         <v-btn href="https://keep.google.com/u/0/"
         class="btnDiri"
-        target="-blank">            
+        target="-blank"> 
+        <img
+          src="https://ssl.gstatic.com/images/branding/product/1x/keep_2020q4_32dp.png"
+          alt="Keep"
+          style="width:20px; height:20px; margin-right:8px;"
+        />           
         Keep</v-btn>
       </v-col>
 

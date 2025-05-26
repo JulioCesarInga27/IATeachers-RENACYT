@@ -216,35 +216,77 @@
                 </v-container>
 
                 <v-container class="contenedorAcceso">
-                    <v-col class="sepic">
-                        <v-btn href="https://calendar.google.com/calendar/u/0/r?pli=1"
-                        height="30"
-                        target="-blank">            
-                        Calendario</v-btn>
-                    </v-col>
-
-                    <v-col class="sepic">
-                        <v-btn href="https://www.google.com/intl/es-419/gmail/about/"
-                        height="30"
-                        target="-blank">            
-                        Gmail
+                    <v-row justify="center" dense>
+                        <!-- Fila 1 -->
+                        <v-col cols="6" sm="5" md="4" class="sepic d-flex justify-center">
+                        <v-btn 
+                            href="https://calendar.google.com/calendar/u/0/r?pli=1"
+                            height="30"
+                            target="_blank"
+                            class="d-flex align-center"
+                            style="min-width: 120px;"
+                        >
+                            <img
+                            src="https://ssl.gstatic.com/images/branding/product/1x/calendar_2020q4_32dp.png"
+                            alt="Calendario"
+                            style="width:20px; height:20px; margin-right:8px;"
+                            />
+                            Calendario
                         </v-btn>
-                    </v-col>
-
-                    <v-col class="sepic">
-                        <v-btn href="https://docs.google.com/document/u/0/?tgif=d"
-                        height="30"
-                        target="-blank">            
-                        Documentos</v-btn>
-
-                    </v-col>
-
-                    <v-col class="sepic">
-                        <v-btn href="https://drive.google.com/drive/my-drive?hl=es"
-                        height="30"
-                        target="-blank">            
-                        Drive</v-btn>
-                    </v-col>
+                        </v-col>
+                        
+                        <v-col cols="6" sm="5" md="4" class="sepic d-flex justify-center">
+                        <v-btn 
+                            href="https://www.google.com/intl/es-419/gmail/about/"
+                            height="30"
+                            target="_blank"
+                            class="d-flex align-center"
+                            style="min-width: 120px;"
+                        >
+                            <img
+                            src="https://ssl.gstatic.com/images/branding/product/1x/gmail_2020q4_32dp.png"
+                            alt="Gmail"
+                            style="width:20px; height:20px; margin-right:8px;"
+                            />
+                            Gmail
+                        </v-btn>
+                        </v-col>
+                        
+                        <!-- Fila 2 -->
+                        <v-col cols="6" sm="5" md="4" class="sepic d-flex justify-center">
+                        <v-btn 
+                            href="https://docs.google.com/document/u/0/?tgif=d"
+                            height="30"
+                            target="_blank"
+                            class="d-flex align-center"
+                            style="min-width: 120px;"
+                        >
+                            <img
+                            src="https://ssl.gstatic.com/images/branding/product/1x/docs_2020q4_32dp.png"
+                            alt="Documentos"
+                            style="width:20px; height:20px; margin-right:8px;"
+                            />
+                            Documentos
+                        </v-btn>
+                        </v-col>
+                        
+                        <v-col cols="6" sm="5" md="4" class="sepic d-flex justify-center">
+                        <v-btn 
+                            href="https://drive.google.com/drive/my-drive?hl=es"
+                            height="30"
+                            target="_blank"
+                            class="d-flex align-center"
+                            style="min-width: 120px;"
+                        >
+                            <img
+                            src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png"
+                            alt="Drive"
+                            style="width:20px; height:20px; margin-right:8px;"
+                            />
+                            Drive
+                        </v-btn>
+                        </v-col>
+                    </v-row>
 
                 </v-container>
 
