@@ -1,4 +1,6 @@
 import pytesseract
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 from pdf2image import convert_from_bytes
 import re
 import json
@@ -7,6 +9,18 @@ import tensorflow as tf
 from tensorflow.keras import layers, Model # type: ignore
 import spacy
 import nltk
+import nltk.data
+
+_original_load = nltk.data.load
+
+def patched_load(resource_name, *args, **kwargs):
+    if resource_name == 'tokenizers/punkt_tab/english.pickle':
+        resource_name = 'tokenizers/punkt/english.pickle'
+    return _original_load(resource_name, *args, **kwargs)
+
+nltk.data.load = patched_load
+
+
 
 # Cargar modelo de spacy para español
 nlp = spacy.load('es_core_news_sm')
@@ -104,18 +118,19 @@ def extract_answers_and_count(text):
     answer_list = []
     answer_count = 0
 
-    pattern = re.compile(r'\d+\.\s.*?\?\s*\(\d+\spuntos?\)\s*(.*?)(?=\d+\.\s|\Z)', re.DOTALL)
+    pattern = re.compile(r'\d+\.\s.?\?\s\(\d+\spuntos?\)\s*([\s\S]*?)(?=\d+\.\s|\Z)', re.DOTALL)
     matches = pattern.findall(text)
 
     for match in matches:
-        mcq_match = re.search(r'(O\)|O|@)\s*([^\n]*)', match)
-        if mcq_match:
-            answer = mcq_match.group(0).strip()
-        else:
-            answer = match.strip()
-
-        if answer:
-            answer_list.append(answer)
+        # Buscamos líneas que parezcan opciones o respuestas
+        lines = match.strip().split('\n')
+        response = ''
+        for line in lines:
+            if re.match(r'^\s*(O\)|O|@|-|\*)', line.strip()):
+                response += line.strip() + ' '
+        response = response.strip()
+        if response:
+            answer_list.append(response)
             answer_count += 1
 
     print(f"Respuestas extraídas: {answer_list}, Contador de respuestas: {answer_count}")
