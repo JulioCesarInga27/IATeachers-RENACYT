@@ -4,6 +4,8 @@ from flask_cors import CORS
 from chatbot import predict_class, get_response, intenciones  # Ajusta la importación según corresponda
 from bert_model import evaluar_respuesta_usuario  # Importa la función de evaluación
 from flask import Flask, request, jsonify
+import pytesseract
+
 from pdf_functions import (
     extract_text_from_pdf,
     extract_names,
@@ -15,6 +17,7 @@ from pdf_functions import (
     create_json_data
 )
 import tensorflow as tf
+
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "http://localhost:3003"}})  
